@@ -171,7 +171,7 @@ As a result, we concluded that the **cost column lacks a consistent or interpret
 --- Exploratory Data Analysis Report ---
 
 --- Overall Performance Metrics ---
-Total Revenue Generated: $577,604.82
+Total Revenue Generated: $2.286.000
 Average Product Price: $49.46
 Average Defect Rate: 2.28%
 Average Shipping Cost: $5.55
@@ -179,9 +179,9 @@ Average Manufacturing Cost: $47.27
 
 --- Analysis by Product Type ---
   Product type  Total_Revenue  Average_Price  Average_Stock_Level  Average_Defect_Rate  Total_Products_Sold
-0    cosmetics  161521.265999      57.361058            58.653846             1.919287                11757
-1     haircare  174455.390605      46.014279            48.352941             2.483150                13611
-2     skincare  241628.162133      47.259329            40.200000             2.334681                20731
+0    cosmetics    600585K        57.361058            58.653846             1.919287                11757
+1     haircare    632896K        46.014279            48.352941             2.483150                13611
+2     skincare    1.052M         47.259329            40.200000             2.334681                20731
 
 --- Analysis by Supplier ---
   Supplier name  Average_Lead_Time  Average_Defect_Rate  Average_Manufacturing_Cost  Total_Production_Volume
@@ -193,24 +193,30 @@ Average Manufacturing Cost: $47.27
 
 --- Analysis by Shipping Carrier ---
   Shipping carriers  Average_Shipping_Times  Average_Shipping_Cost
-0         Carrier A               6.142857               5.554923
-1         Carrier B               5.302326               5.509247
-2         Carrier C               6.034483               5.599292
+0         Carrier A               172               155.54
+1         Carrier B               228               236.89
+2         Carrier C               175               162.39
 
 --- Analysis by Location ---
-    Location  Total_Revenue  Average_Stock_Level  Average_Lead_Time
-0  Bangalore  102601.723882            47.555556          16.277778
-1    Chennai  119142.815748            39.950000          18.650000
-2      Delhi   81027.701225            50.066667          14.600000
-3    Kolkata  137077.551005            57.560000          19.440000
-4     Mumbai  137755.026877            42.363636          15.318182
+    Location      Average_Stock_Level  Average_Lead_Time
+0  Bangalore            47.555556          16.277778
+1    Chennai            39.950000          18.650000
+2      Delhi            50.066667          14.600000
+3    Kolkata            57.560000          19.440000
+4     Mumbai            42.363636          15.318182
 
 ---Analysis by Transportation modes ---
    Transportation modes       average_shipping_cost         Average_shipping_times
-0      Air                        5.5482                            5.75
-1      Rail                       5.5482                            5.75
-2      Road                       5.5482                            5.75
-3      Sea                        5.5482                            5.75
+0      Air                        156.46                            133
+1      Rail                       153.14                            184
+2      Road                       160.73                            137
+3      Sea                        84.49                             121
+
+-- Analysis by routes--
+     route                       average_shipping_cost              average_shipping_times
+0    A                                 231.31                             259
+1    B                                 205.43                             211
+2    C                                 118.08                             105
 
 --- Correlation Matrix (Selected Columns) ---
 (Summary: Most correlations are weak. Notable weak negative correlation between Revenue and Manufacturing Costs [-0.21], and Revenue and Stock Levels [-0.16].)
@@ -250,7 +256,7 @@ Based on the exploratory data analysis and visualizations, the following key ins
 
 ## Overall Performance
 
-*   The total revenue generated across all products is approximately $577,604.82.
+*   The total revenue generated across all products is approximately $2.286.000
 *   The average product price is $49.46, while the average manufacturing cost is $47.27, suggesting potentially thin margins on average, although this varies by product.
 *   The average defect rate is 2.28%, which could be an area for improvement depending on industry benchmarks.
 *   Average shipping costs ($5.55) appear relatively low and consistent.
